@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="プログラミング学習">
+  <title>js_lesson3_3</title>
+</head>
+
+<body>
+  <h1>ToDoリスト</h1>
+  <p>
+    <input type="radio" id="radio1" name="change" value="all">
+    <label for="radio1">すべて</label>
+    <input type="radio" id="radio2" name="change" value="working">
+    <label for="radio2">作業中</label>
+    <input type="radio" id="radio3" name="change" value="complete">
+    <label for="radio3">完了</label>
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>コメント</th>
+        <th>状態</th>
+      </tr>
+    </thead>
+    <tbody id="table-contents">
+    </tbody>
+  </table>
+  <h2>新規タスクの追加</h2>
+  <p>
+    <input type="text" id="comment">
+    <input type="button" value="追加" onclick="addtable()">
+  </p>
+  <script type="text/javascript" src="js/lesson3_3.js">
+  </script>
+</body>
